@@ -1,7 +1,9 @@
 extends CharacterBody2D
+
 @onready var tile_map = $".."
 @onready var sprite_2d = $Sprite2D
 @onready var player_sprite = $AnimatedSprite2D
+
 var is_moving = false
 var indicator_offset = 16  
 
@@ -65,5 +67,3 @@ func move(direction: Vector2):
 	
 	is_moving = true
 	global_position = tile_map.map_to_local(target_tile) 
-
-

@@ -44,5 +44,3 @@ Energy System: Ability Points
 Since players rely on ability points (AP) to move and attack, each card could have a cost tied to it. Low-cost cards could be weaker but allow more frequent use, while high-cost cards are stronger but limit actions per turn.
 Specialization Cards
 include specific cards that push players toward specialization. For example, a Necromancer might find cards that summon undead or drain health, while a Sorcerer might have powerful AoE spells but less survivability.
-
-
