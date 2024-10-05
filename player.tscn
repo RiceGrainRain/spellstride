@@ -1,6 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://4ov2pd7r3oi"]
+[gd_scene load_steps=5 format=3 uid="uid://cyvckunjfhic7"]
 
-[ext_resource type="Script" path="res://Player.gd" id="1_vgf7p"]
+[ext_resource type="Script" path="res://addons/entity_plugin/entity.gd" id="1_kv62i"]
 [ext_resource type="Texture2D" uid="uid://b2byichdbk7q5" path="res://assets/32rogues/rogues.png" id="2_4jpk5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ltqg4"]
@@ -18,14 +18,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_at7bu"]
-
 [node name="Player" type="CharacterBody2D"]
-script = ExtResource("1_vgf7p")
+script = ExtResource("1_kv62i")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_djiwu")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 7)
-shape = SubResource("CircleShape2D_at7bu")
