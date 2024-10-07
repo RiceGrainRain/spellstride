@@ -6,3 +6,4 @@
 resource_local_to_scene = true
 shader = ExtResource("1_hilkb")
 shader_parameter/highlighted_cell = null
+shader_parameter/reachable = null

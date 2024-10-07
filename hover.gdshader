@@ -2,6 +2,7 @@ shader_type canvas_item;
 
 varying flat vec2 vertexPos;
 uniform vec2 highlighted_cell;
+uniform float reachable;
 
 void vertex() {
 	vertexPos = (MODEL_MATRIX * vec4(VERTEX, 0.0, 1.0)).xy;
@@ -13,5 +14,5 @@ void fragment() {
 	float intensity = 0.1 * (sin(PI * TIME) + 2.0);
 
 	vec4 textureColor = texture(TEXTURE, UV);
-	COLOR = mix(textureColor, vec4(vec3(0.0), textureColor.a), intensity * withinX * withinY);
+	COLOR = mix(textureColor, vec4(reachable, 0.0, 0.0, textureColor.a), intensity * withinX * withinY);
 }
